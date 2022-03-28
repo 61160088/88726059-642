@@ -1,0 +1,30 @@
+<HTML>
+    <HEAD><TITLE>Image collover</TITLE>
+    <SCRIPT language-javascript>
+    function highlightdocs(){
+        if (document,images) {document.images["docs"].src = docsOn.src}
+    }
+    function unhighlightdocs(){
+        if (document,images) {document.images["docs"].src = docsOn.src} 
+    }
+    if (document.images){
+        docsOn = new Image();
+        docsOn.src = "gg_color.png"
+        docsOff = new Image();
+        docsOn.src = "gg_gray.png"
+    }
+    </SCRIPT>
+    </HEAD>
+    <body>
+        <p>
+            <A HREF = "http://www.google.com"
+            onmouseover="highlightdocs()" onmouseout="unhighlightdocs()">
+            <img src="gg_gray.png" name=docs height= 25 width= 25 border = 0 >
+
+        </A>
+    
+        </p>
+    </body>
+</HTML>
+  
+  

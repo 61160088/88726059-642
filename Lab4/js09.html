@@ -1,0 +1,47 @@
+<html>
+    <head><title>Example of alert, confirm, prompt</title>
+<script language=JavaScript>
+    function alertUser(){
+        alert("An alert box contains an exclamation mark");
+    }
+    function confirmUser(){
+        var mag = "\n please connfirm that you want\n" +
+                "to test another button?";
+        if (confirm(mag))
+        document.write("<h2>You selected OK</h2>");
+        else
+        document.write("<h2>You selected Cancel</h2>");
+    }
+function promptUser(){
+    namel=prompt("What is your name"," ");
+    document.write("<h2>welcome to this page" + namel + "</h2>");
+}
+
+</script>
+    </head>
+    <body>
+        welcome to this page<br>
+    <from>
+        <input type="button" value="click here to test alert()" onclick="alertUser()"><br>
+        <input type="button" value="click here to test confirm()" onclick="confirmUser()"><br>
+        <input type="button" value="click here to test prompt()" onclick="promptUser()">
+    </from>
+    </body>
+</html>
+<html>
+
+<head>
+    <title>Pull-down Menu with URL Revealed</title>
+    <script language=Javascript>
+        function doMoveBrowser(form) {
+            parent.location.href = form.list.options[getSelectedValue()].value;
+        }
+        function getSelectedValue() {
+            return document.form.list.selectedInndex
+        }
+        function showURL(form) {
+            form.TextBox.value = form.list.options[getSelectedValue()].value;
+        }
+
+    </script>
+</head>
